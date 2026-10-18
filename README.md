@@ -7,7 +7,7 @@ with a one-paragraph summary, so you can find the right one without opening each
 
 | Template | Stack | Use it for | Status |
 |---|---|---|---|
-| [template-sqlmesh-duckdb](https://github.com/CarlosSolrac/template-sqlmesh-duckdb) | Python 3.13, uv, DuckDB, SQLMesh | Batch data pipelines: ingest sources into typed raw tables, transform them with tested SQL models, block bad data with audits | Being built |
+| [template-sqlmesh-duckdb](https://github.com/CarlosSolrac/template-sqlmesh-duckdb) | Python 3.13, uv, DuckDB, SQLMesh | Batch data pipelines: ingest sources into typed raw tables, transform them with tested SQL models, block bad data with audits | Ready |
 
 ### template-sqlmesh-duckdb
 
