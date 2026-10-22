@@ -12,12 +12,15 @@ with a one-paragraph summary, so you can find the right one without opening each
 ### template-sqlmesh-duckdb
 
 Ingestion adapters (ports and adapters) replace typed raw tables; SQLMesh models transform them in plain DuckDB SQL;
-blocking audits keep bad rows out of the marts; one composition root wires it together and restates downstream models
-on every run. Its `docs/design.md` is the worked example of a design spec.
+blocking audits keep bad rows out of the warehouse, because each run builds on a copy that replaces the live file only on
+success, and a failed run names the audit or test that failed; one composition root wires it together and restates
+downstream models on every run. Its `docs/design.md` is the worked example of a design spec.
 
 ## Start a project from a template
 
-    gh repo create <your-project> --template CarlosSolrac/<template> --clone
+    gh repo create <your-project> --private --template CarlosSolrac/<template> --clone
+
+`gh` needs `--private`, `--public` or `--internal` when given a name.
 
 Then, in the new project, ask Claude Code: "Configure this repository to follow the python-code-standards."
 
